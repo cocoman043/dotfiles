@@ -53,3 +53,15 @@ vim.wo.signcolumn = 'yes'
 vim.o.fileencoding = 'utf-8'
 
 vim.o.cmdheight = 1
+
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "markdown",
+  callback = function()
+    vim.opt_local.wrap = true -- Enable wrap
+    vim.opt_local.linebreak = true -- Wrap at word boundaries, not mid-word
+    vim.opt_local.breakindent = true -- Keep indentation on wrapped lines
+    vim.opt_local.showbreak = "↪ " -- (Optional) Show a marker for wrapped lines
+    vim.keymap.set('n', 'j', 'gj', { buffer = true }) -- Move down by visual line
+    vim.keymap.set('n', 'k', 'gk', { buffer = true }) -- Move up by visual line
+  end,
+})
