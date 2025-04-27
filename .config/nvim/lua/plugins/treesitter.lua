@@ -11,7 +11,8 @@ return {
       'lua',
       'luadoc',
       'markdown',
-      'rust'
+      'markdown_inline',
+      'rust',
     },
     auto_install = true,
     highlight = {
