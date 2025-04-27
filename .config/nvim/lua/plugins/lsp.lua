@@ -6,6 +6,9 @@ return {
       'folke/lazydev.nvim',
       ft = 'lua',
       opts = {
+        inlay_hints = {
+          enabled = true
+        },
         library = {
           { path = "${3rd}/luv/library", words = { "vim%.uv" } },
         }
@@ -18,6 +21,9 @@ return {
     require('lspconfig').clangd.setup { capabilities = capabilities }
     require('lspconfig').rust_analyzer.setup { capabilities = capabilities }
     require('lspconfig').ts_ls.setup { capabilities = capabilities }
+
+    -- enable inlay hints by default
+    vim.lsp.inlay_hint.enable()
 
     vim.api.nvim_create_autocmd('LspAttach', {
       callback = function(args)
