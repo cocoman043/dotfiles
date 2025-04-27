@@ -43,3 +43,4 @@ vim.keymap.set('n', '<C-l>', '<C-w>l', { desc = 'switch focus to window right' }
 -- diagnostic kemaps
 vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, { desc = 'Go to previous diagnostic' })
 vim.keymap.set('n', ']d', vim.diagnostic.goto_next, { desc = 'Go to next diagnostic' })
+vim.keymap.set('n', '<leader>d', vim.diagnostic.open_float, { desc = 'View diagnostic at cursor' })
