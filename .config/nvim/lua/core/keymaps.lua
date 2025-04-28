@@ -5,6 +5,10 @@ vim.g.maplocalleader = ' '
 
 vim.keymap.set({ 'n', 'v' }, '<Space>', '<Nop>', { silent = true })
 
+-- clear highlights on serach
+vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>', { desc = 'clear highlights' })
+vim.keymap.set('n', '<C-c>', '<cmd>nohlsearch<CR>', { desc = 'clear highlights' })
+
 -- shortcut to open neovim configuration
 vim.keymap.set('n', '<leader>vc', '<cmd>e ' .. CONFIG_PATH .. '<CR>', { desc = 'open neovim configuration' })
 
