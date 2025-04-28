@@ -4,7 +4,10 @@ return {
 
   version = '1.*',
   opts = {
-    keymap = { preset = 'default' },
+    keymap = {
+      preset = 'default',
+      ['<C-l>'] = { 'accept' }
+    },
 
     appearance = {
       nerd_font_variant = 'mono'
