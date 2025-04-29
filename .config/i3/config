@@ -154,5 +154,13 @@ bar {
         status_command i3status
 }
 
+#border colors
+client.focused #343746 #343746 #F8F8F2 #343746 #770000
+client.focused_inactive #343746 #343746 #F8F8F2 #21222C #21222C
+client.unfocused #343746 #343746 #F8F8F2 #21222C #21222C
+client.background       #ffffff
+
 gaps inner 3
 default_border pixel
+
+
