@@ -36,8 +36,8 @@ vim.keymap.set('n', '<leader>x', '<cmd>bdelete!<CR>', { desc = 'close buffer' })
 vim.keymap.set('n', '<leader>b', '<cmd> enew <CR>', { desc = 'close buffer' })
 
 -- window management
-vim.keymap.set('n', '<leader>v', '<C-w>v', { desc = 'split window vertical' })
-vim.keymap.set('n', '<leader>s', '<C-w>s', { desc = 'split window horizontal' })
+vim.keymap.set('n', '<leader>v', '<cmd>split vertical<CR>', { desc = 'split window vertical' })
+vim.keymap.set('n', '<leader>s', '<cmd>split horizonal<CR>', { desc = 'split window horizontal' })
 vim.keymap.set('n', '<leader>c', '<C-w>c', { desc = '[c]lose window' })
 vim.keymap.set('n', '<C-k>', '<C-w>k', { desc = 'switch focus to window above' })
 vim.keymap.set('n', '<C-j>', '<C-w>j', { desc = 'switch focus to window below' })

@@ -55,7 +55,7 @@ vim.o.fileencoding = 'utf-8'
 vim.o.cmdheight = 1
 
 vim.api.nvim_create_autocmd("FileType", {
-  pattern = "markdown",
+  pattern = { "markdown", "typst" },
   callback = function()
     vim.opt_local.wrap = true -- Enable wrap
     vim.opt_local.linebreak = true -- Wrap at word boundaries, not mid-word
