@@ -49,12 +49,15 @@ pipewire
 pipewire-alsa
 pipewire-jack
 pipewire-pulse
+python-lsp-server
 rofi
 rust-analyzer
 rustup
 sof-firmware
+steam
 tailscale
 thunar
+tinymist
 ttf-firacode-nerd
 typescript-language-server
 vesktop
