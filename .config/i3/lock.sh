@@ -4,20 +4,22 @@ xset s off dpms 0 10 0
 # i3lock -t -i ~/dotfiles/wallpaper/black_hole.png --ignore-empty-password --show-failed-attempts --nofork
 BLANK='#00000000'
 CLEAR='#ffffff22'
+WHITE='#ffffffff'
+BLACK='#000000ff'
 DEFAULT='#ff00ffcc'
-TEXT='#ee00eeee'
+TEXT='#ff2222ff'
 WRONG='#880000bb'
 VERIFYING='#bb00bbbb'
 
 i3lock \
---insidever-color=$CLEAR     \
+--insidever-color=$BLACK     \
 --ringver-color=$VERIFYING   \
 \
---insidewrong-color=$CLEAR   \
+--insidewrong-color=$BLACK   \
 --ringwrong-color=$WRONG     \
 \
---inside-color=$BLANK        \
---ring-color=$DEFAULT        \
+--inside-color=$BLACK        \
+--ring-color=$TEXT        \
 --line-color=$BLANK          \
 --separator-color=$DEFAULT   \
 \
@@ -31,7 +33,7 @@ i3lock \
 \
 --screen 1                   \
 --blur 5                     \
--i ~/dotfiles/wallpaper/black_hole.png \
+-i ~/dotfiles/wallpaper/nerv.png \
 -t \
 --clock                      \
 --indicator                  \
