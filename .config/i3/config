@@ -7,7 +7,7 @@ exec --no-startup-id xss-lock -- ~/.config/i3/lock.sh
 exec --no-startup-id nm-applet
 exec --no-startup-id volumeicon
 exec --no-startup-id blueman-applet
-exec --no-startup-id feh --recursive --bg-scale ~/dotfiles/wallpaper/black_hole.png
+exec --no-startup-id feh --recursive --bg-scale ~/dotfiles/wallpaper/nerv.png
 exec_always --no-startup-id picom -b
 
 # Use Mouse+$mod to drag floating windows to their wanted position
