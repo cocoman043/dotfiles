@@ -43,12 +43,14 @@ noto-fonts
 noto-fonts-cjk
 noto-fonts-emoji
 nvidia
+obs-studio
 oh-my-posh
 picom
 pipewire
 pipewire-alsa
 pipewire-jack
 pipewire-pulse
+prismlauncher
 python-lsp-server
 rofi
 rust-analyzer
@@ -67,6 +69,7 @@ wireplumber
 xclip
 xdg-utils
 xorg-server
+xorg-xev
 xorg-xinit
 xorg-xset
 xss-lock
