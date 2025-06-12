@@ -65,3 +65,24 @@ vim.api.nvim_create_autocmd("FileType", {
     vim.keymap.set('n', 'k', 'gk', { buffer = true }) -- Move up by visual line
   end,
 })
+
+vim.api.nvim_create_autocmd({"BufReadPost","FileReadPost"}, {
+  pattern = { "*" },
+  callback = function()
+    vim.api.nvim_command("normal zR")
+  end,
+})
+
+
+vim.api.nvim_create_autocmd("BufEnter", {
+  callback = function()
+    if vim.opt.foldmethod:get() == "expr" then
+      vim.schedule(function()
+        vim.opt.foldmethod = "expr"
+      end)
+    end
+  end,
+})
+
+vim.o.foldmethod = "expr"
+vim.o.foldexpr = "nvim_treesitter#foldexpr()"
