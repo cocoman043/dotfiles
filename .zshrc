@@ -8,3 +8,4 @@ eval "$(zoxide init zsh)"
 alias cd='z'
 
 alias yay='~/dotfiles/scripts/installpkg.sh'
+export ANDROID_HOME=/opt/android-studio/
